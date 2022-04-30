@@ -29,6 +29,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+#hyperLink {
+	color:rgb(156, 209, 169)
+}
+
 body {
 	line-height: 1;
 }
@@ -637,6 +641,11 @@ input, select, textarea {
 
 /* Image */
 
+	#image-container {
+		height: 300px;
+		object-fit: cover;
+	}
+
 	.image {
 		border-radius: 4px;
 		border: 0;
@@ -1078,7 +1087,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ffffff;
+			background-color: rgb(113 191 132);;
 			color: #1b1f22 !important;
 			font-weight: 600;
 		}
@@ -1358,7 +1367,7 @@ input, select, textarea {
 
 				#header nav ul li a {
 					display: block;
-					min-width: 7.5rem;
+					min-width: auto;
 					height: 2.75rem;
 					line-height: 2.75rem;
 					padding: 0 1.25rem 0 1.45rem;
@@ -1369,11 +1378,11 @@ input, select, textarea {
 				}
 
 					#header nav ul li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
+						background-color: rgba(24, 224, 41, 0.075);
 					}
 
 					#header nav ul li a:active {
-						background-color: rgba(255, 255, 255, 0.175);
+						background-color: rgba(24, 224, 41, 0.075);
 					}
 
 		#header nav.use-middle:after {

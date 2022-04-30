@@ -1,5 +1,9 @@
 (function($) {
 
+	document.querySelector(id="SendMessageBtn").addEventListener('click', ()=>{
+		alert("Your message has been sent!")
+	})
+
 	/**
 	 * Generate an indented list of links from a nav. Meant for use with panel().
 	 * @return {jQuery} jQuery object.
