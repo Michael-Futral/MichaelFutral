@@ -1,0 +1,83 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    font-size: 16px;
+    margin: 0;
+    background: #fff;
+}
+
+.loading-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: #000;
+    perspective: 200px;
+}
+
+.loader {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -100px;
+    font-size: 30px;
+    color: #fff;
+
+}
+
+.load_anim1,
+.load_anim2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid;
+    border-left: #10ac84;
+    border-top: #ff9f43;
+    border-right: #0984e3;
+    border-bottom: #d63031;
+    left: 50%;
+    right: 50%;
+    margin: -100px 0 0 -100px;
+    animation: loadAnim 3s;
+    animation-iteration-count: infinite;
+}
+
+.load_anim2 {
+    animation: loadAnim2 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loadAnim {
+    0% {
+        transform: rotate3d(1, 1, 1, 0def);
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@keyframes loadAnim2 {
+    0% {
+        transform: rotate3d(1, 1, 1, 0def);
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}

@@ -1,0 +1,13 @@
+:root {
+    --darkmode-font: #cecec5;
+    --darkmode-background: #25282a;
+    --darkmode-body-background: #181a1b;
+    --darkmode-icon-primary: #a29a8e;
+    --darkmode-nav-button: #878077;
+    --darkmode-nav-button-click: #c9c5c0;
+
+    --secondary: #ffe800;
+    --secondary-dark: #c5b300;
+    --light-text: #ffffff;
+    --nav-bg-color: #212529;
+}
